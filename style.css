@@ -108,10 +108,12 @@ a::after{
     display: block;
     background-color: black;
     transition: 2s;
+    z-index: -3;
 }
 
 .after-padding::after{
     margin-top: 5px;
+    
 }
 
 a:hover::after{
@@ -165,7 +167,8 @@ a:hover::after{
 /* texto nome */
 .img-git{
     margin-top: 50px;
-    width: 80px;
+    z-index: -20;
+    position: relative;
     border-radius: 50%;
     border: 2px solid white;
     background-color: white;
