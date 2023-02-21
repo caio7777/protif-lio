@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    margin: 5px;
+    text-shadow: 0 0 8px rgba(255, 255, 255,1);
+
+}
+label{
+    position: absolute;
+    width: 50px;
+   
+  
+}
+.tab{
+    width: 8px;
+}
+h1{
+    color: white;
+    text-align: center;
+    
+}
+#show-perfil{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.img-perfil{
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 15px rgba(255, 255, 255,1);
+    margin-top: 35px;
+    
+}
+.img-perfil:hover{
+    box-shadow: 0px 0px 5px 15px rgba(255, 255, 255,0.3);
+}
+
+body{
+    background-color: rgb(0 , 0, 0);
+    border: 2px solid whitesmoke;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+.l1,.l2,.l3{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+    padding: 0;
+
+}
+
+input[type="checkbox"]{
+    display: none;
+ 
+}
+input[type="checkbox"]~ label .l1{
+    top: -20px;
+    transition: 1s;
+
+}
+input[type="checkbox"]:checked~ label .l1{
+    position: relative;
+    top: 20px;
+    rotate: 45deg;
+    transition: 1s;
+
+}
+
+input[type="checkbox"]:checked~ label .l3{
+    transition: 1s;
+    rotate:-45deg;
+
+}
+input[type="checkbox"]:checked~ label .l2{
+   opacity: 0;
+   
+}
+ul li {
+    padding: 10px;
+    list-style: none;
+    
+}
+ a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+a:hover{
+    text-shadow: 0px 5px 25px black;
+    color: rgb(78, 202, 202);
+}
+
+a::after{
+    content: "";
+    position: relative;
+    width: 10px;
+    height: 4px;
+    display: block;
+    background-color: black;
+    transition: 2s;
+}
+
+.after-padding::after{
+    margin-top: 5px;
+}
+
+a:hover::after{
+    width: 100px;
+    
+}
+
+ nav{
+    width: 20%;
+    min-width: 200px;
+    height: 420px;
+    background-color: rgb(114, 6, 124);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left:-400px;
+    transition: 2s;
+    margin: 5px;
+    border-radius: 20px;
+    border: 3px solid rgb(238, 243, 243);
+    box-shadow: 3px 0px 2px 2px  rgba(255, 255, 255,0.5);
+    
+}
+ input[type="checkbox"]:checked~nav{
+    transform: translateX(400px);
+    
+    
+ }
+.ligth-off{
+    position: absolute;
+    right: 7px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.ligth__on{
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 8px;
+    /* display: none; */
+}
+.img-perfil-logo{
+    border-radius: 5px;
+}
+/* texto nome */
+.img-git{
+    margin-top: 50px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: white;
+}
