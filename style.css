@@ -122,10 +122,11 @@ a:hover::after{
  nav{
     width: 20%;
     min-width: 200px;
-    height: 420px;
+    height: 470px;
     background-color: rgb(114, 6, 124);
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     top: 50px;
     left:-400px;
